@@ -1,0 +1,16 @@
+section.hot
+  .container
+    .row
+      .hot__title
+        +title_part('SẢN PHẨM BÁN CHẠY')
+        +list_new(new_theme)
+        +togle()
+    .row
+      .hot__small
+        +product_only('pro4','-hide')
+        +product_only('pro3','-hide')
+      .hot__large
+        +product_only('hot','-hide')
+      .hot__small
+        +product_only('pro6','-hide')
+        +product_only('pro5','-only')
