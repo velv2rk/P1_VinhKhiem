@@ -1,0 +1,30 @@
+.hot {
+  @extend %p-col-2;
+  .hot__title {
+    @include collum(15px,15px);
+    display: flex;
+    padding-bottom: 40px;
+  }
+  .hot__small {
+    @include collum(15px, 15px);
+    @include flex(25%);
+    display: flex;
+    flex-wrap: wrap;
+    .product__item{
+      @include flex(100%)
+    }
+    @media (max-width: 767px){
+      &{
+        @include flex(100%);
+      }
+    }
+
+  }
+  .hot__large {
+    @include collum(15px, 15px);
+    @include flex(50%);
+    .product__item {
+      @include flex(100%);
+    }
+  }
+}

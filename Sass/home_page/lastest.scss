@@ -1,0 +1,8 @@
+.lastest {
+  @extend %p-col-2;
+  .title__last{
+    @include collum(15px,15px);
+    @include display_flex();
+    padding-bottom: 40px;
+  }
+}
