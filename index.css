@@ -1,4 +1,4 @@
-.cart__main .sum__table, .cart__main .cart__table table tr td, .cart__main .cart__table table tr th, .cart__main .cart__table table tr, .cart__main, .main__user .login__text .item__button, .main__user .login__text, .main__user .login__form .item__button, .main__user .login__form, .main__user .form__regis .item__button, .main__user .form__regis .check-box__item, .main__user .form__regis h3, .main__blog, .blog__detail__form .form__blog, .blog__detail__form, .blog__detail__chat .blog__detail__comment, .blog__detail .blog__detail__footer, .main__list, footer .main__foot, .lastest, .hot, .news, .slider, .product__same .same__item, .product__same, .product__tag {
+.error__main, .cart__main .sum__table, .cart__main .cart__table table tr td, .cart__main .cart__table table tr th, .cart__main .cart__table table tr, .cart__main, .main__user .login__text .item__button, .main__user .login__text, .main__user .login__form .item__button, .main__user .login__form, .main__user .form__regis .item__button, .main__user .form__regis .check-box__item, .main__user .form__regis h3, .main__blog, .blog__detail__form .form__blog, .blog__detail__form, .blog__detail__chat .blog__detail__comment, .blog__detail .blog__detail__footer, .main__list, footer .main__foot, .lastest, .hot, .news, .slider, .product__same .same__item, .product__same, .product__tag {
   padding: 2rem 0;
 }
 
@@ -143,7 +143,7 @@ header .menu__icon ul li a {
   color: #363636;
   text-decoration: none;
 }
-header .menu__icon ul li a i {
+header .menu__icon ul li a i, header .menu__icon ul li a .error__main .error__text .item__button a, .error__main .error__text .item__button header .menu__icon ul li a a {
   font-size: 14px;
 }
 header .menu__icon ul li:hover {
@@ -274,7 +274,7 @@ header .menu__user ul li:hover a {
   top: 30%;
   color: #cdcdcd;
 }
-.menu__logo .menu__search a i {
+.menu__logo .menu__search a i, .menu__logo .menu__search a .error__main .error__text .item__button a, .error__main .error__text .item__button .menu__logo .menu__search a a {
   font-size: 16px;
 }
 @media (max-width: 767px) {
@@ -384,7 +384,7 @@ header .menu__user ul li:hover a {
 .menu__basket .basket__icon {
   padding: 0.8rem;
 }
-.menu__basket .basket__icon a i {
+.menu__basket .basket__icon a i, .menu__basket .basket__icon a .error__main .error__text .item__button a, .error__main .error__text .item__button .menu__basket .basket__icon a a {
   color: white;
 }
 .menu__basket .basket__count {
@@ -413,7 +413,7 @@ header .menu__user ul li:hover a {
   color: #363636;
   font-size: 18px;
 }
-.title__text h3 i {
+.title__text h3 i, .title__text h3 .error__main .error__text .item__button a, .error__main .error__text .item__button .title__text h3 a {
   color: #f5bd10;
   display: inline-block;
   margin-right: 10px;
@@ -557,10 +557,10 @@ header .menu__user ul li:hover a {
   font-size: 12px;
   color: #898989;
 }
-.product__last .text__last p i {
+.product__last .text__last p i, .product__last .text__last p .error__main .error__text .item__button a, .error__main .error__text .item__button .product__last .text__last p a {
   color: #f5bd10;
 }
-.product__last .text__last p i.-white {
+.product__last .text__last p i.-white, .product__last .text__last p .error__main .error__text .item__button a.-white, .error__main .error__text .item__button .product__last .text__last p a.-white {
   border-color: #f5bd10;
   color: white;
 }
@@ -606,10 +606,10 @@ header .menu__user ul li:hover a {
   font-size: 12px;
   color: #898989;
 }
-.product__item p i {
+.product__item p i, .product__item p .error__main .error__text .item__button a, .error__main .error__text .item__button .product__item p a {
   color: #f5bd10;
 }
-.product__item p i.-white {
+.product__item p i.-white, .product__item p .error__main .error__text .item__button a.-white, .error__main .error__text .item__button .product__item p a.-white {
   border-color: #f5bd10;
   color: white;
 }
@@ -692,10 +692,10 @@ header .menu__user ul li:hover a {
   font-size: 12px;
   color: #898989;
 }
-.product__detail .product__detail__info .star i {
+.product__detail .product__detail__info .star i, .product__detail .product__detail__info .star .error__main .error__text .item__button a, .error__main .error__text .item__button .product__detail .product__detail__info .star a {
   color: #f5bd10;
 }
-.product__detail .product__detail__info .star i.-white {
+.product__detail .product__detail__info .star i.-white, .product__detail .product__detail__info .star .error__main .error__text .item__button a.-white, .error__main .error__text .item__button .product__detail .product__detail__info .star a.-white {
   border-color: #f5bd10;
   color: white;
 }
@@ -739,7 +739,7 @@ header .menu__user ul li:hover a {
   width: 85%;
   padding: 5px;
 }
-.product__detail .product__detail__info .info__dropdown .dropdown__item i {
+.product__detail .product__detail__info .info__dropdown .dropdown__item i, .product__detail .product__detail__info .info__dropdown .dropdown__item .error__main .error__text .item__button a, .error__main .error__text .item__button .product__detail .product__detail__info .info__dropdown .dropdown__item a {
   position: absolute;
   color: #898989;
   right: 20%;
@@ -779,7 +779,7 @@ header .menu__user ul li:hover a {
   color: white;
   text-align: center;
 }
-.product__detail .product__detail__info .info__social a i {
+.product__detail .product__detail__info .info__social a i, .product__detail .product__detail__info .info__social a .error__main .error__text .item__button a, .error__main .error__text .item__button .product__detail .product__detail__info .info__social a a {
   font-size: 12px;
 }
 @media (max-width: 767px) {
@@ -1033,7 +1033,7 @@ header .menu__user ul li:hover a {
   max-width: 100%;
   display: flex;
 }
-.slider .slider__text .slider__content i {
+.slider .slider__text .slider__content i, .slider .slider__text .slider__content .error__main .error__text .item__button a, .error__main .error__text .item__button .slider .slider__text .slider__content a {
   flex: 0 0 15%;
   max-width: 15%;
   color: #f5bd10;
@@ -1053,7 +1053,7 @@ header .menu__user ul li:hover a {
 .slider .slider__text .slider__content:hover {
   background-color: #f5bd10;
 }
-.slider .slider__text .slider__content:hover i {
+.slider .slider__text .slider__content:hover i, .slider .slider__text .slider__content:hover .error__main .error__text .item__button a, .error__main .error__text .item__button .slider .slider__text .slider__content:hover a {
   color: white;
 }
 .slider .slider__text .slider__content:hover h3 {
@@ -1499,7 +1499,7 @@ header .menu__user ul li:hover a {
   display: flex;
   padding: 15px 100px 15px 0px;
 }
-.about__me .about__item.-large ul li i {
+.about__me .about__item.-large ul li i, .about__me .about__item.-large ul li .error__main .error__text .item__button a, .error__main .error__text .item__button .about__me .about__item.-large ul li a {
   font-size: 18px;
   color: black;
   margin-right: 10px;
@@ -1507,7 +1507,7 @@ header .menu__user ul li:hover a {
 .about__me .about__item h3 {
   font-size: 14px;
 }
-.about__me .about__item h3 i {
+.about__me .about__item h3 i, .about__me .about__item h3 .error__main .error__text .item__button a, .error__main .error__text .item__button .about__me .about__item h3 a {
   color: #f5bd10;
   margin-right: 10px;
 }
@@ -1522,7 +1522,7 @@ header .menu__user ul li:hover a {
   display: flex;
   padding-bottom: 21px;
 }
-.about__me .about__item ul li i {
+.about__me .about__item ul li i, .about__me .about__item ul li .error__main .error__text .item__button a, .error__main .error__text .item__button .about__me .about__item ul li a {
   font-size: 18px;
   color: black;
   margin-right: 10px;
@@ -1545,7 +1545,7 @@ header .menu__user ul li:hover a {
   .about__me .about__item p {
     font-size: 9px;
   }
-  .about__me .about__item p i {
+  .about__me .about__item p i, .about__me .about__item p .error__main .error__text .item__button a, .error__main .error__text .item__button .about__me .about__item p a {
     font-size: 9px;
   }
 }
@@ -1594,7 +1594,7 @@ footer .main__foot .pay__item .foot__answer .answer__item .answer__icon {
   border: solid 1px #f5bd10;
   text-align: center;
 }
-footer .main__foot .pay__item .foot__answer .answer__item .answer__icon i {
+footer .main__foot .pay__item .foot__answer .answer__item .answer__icon i, footer .main__foot .pay__item .foot__answer .answer__item .answer__icon .error__main .error__text .item__button a, .error__main .error__text .item__button footer .main__foot .pay__item .foot__answer .answer__item .answer__icon a {
   padding-top: 20px;
 }
 footer .main__foot .pay__item .foot__answer .answer__item .answer__text {
@@ -1704,10 +1704,10 @@ footer .bonus__foot .bonus__text ul li a {
   display: inline-block;
   margin-right: 5px;
 }
-.left__item ul li a i {
+.left__item ul li a i, .left__item ul li a .error__main .error__text .item__button a, .error__main .error__text .item__button .left__item ul li a a {
   margin-right: 5px;
 }
-.left__item ul li i.-hide {
+.left__item ul li i.-hide, .left__item ul li .error__main .error__text .item__button a.-hide, .error__main .error__text .item__button .left__item ul li a.-hide {
   position: absolute;
   color: #f5bd10;
   display: none;
@@ -1774,7 +1774,7 @@ footer .bonus__foot .bonus__text ul li a {
 .left__item ul.-blog li:first-child a {
   color: black;
 }
-.left__item ul.-blog li:first-child a i {
+.left__item ul.-blog li:first-child a i, .left__item ul.-blog li:first-child a .error__main .error__text .item__button a, .error__main .error__text .item__button .left__item ul.-blog li:first-child a a {
   color: #f5bd10;
 }
 .left__item ul.-blog li.-list__blog__img {
@@ -1813,7 +1813,7 @@ footer .bonus__foot .bonus__text ul li a {
   .left__item ul li:first-child {
     position: relative;
   }
-  .left__item ul li:first-child i {
+  .left__item ul li:first-child i, .left__item ul li:first-child .error__main .error__text .item__button a, .error__main .error__text .item__button .left__item ul li:first-child a {
     display: inline-block;
   }
   .left__item ul.-blog li.-list__blog__img {
@@ -1889,7 +1889,7 @@ footer .bonus__foot .bonus__text ul li a {
   flex-wrap: wrap;
   align-self: center;
 }
-.main__list .right__item .list__header .order__style i {
+.main__list .right__item .list__header .order__style i, .main__list .right__item .list__header .order__style .error__main .error__text .item__button a, .error__main .error__text .item__button .main__list .right__item .list__header .order__style a {
   color: #898989;
   position: absolute;
   right: 5px;
@@ -1919,15 +1919,15 @@ footer .bonus__foot .bonus__text ul li a {
   border: solid 0.5px #898989;
   text-align: center;
 }
-.main__list .right__item .list__header .order__button span i {
+.main__list .right__item .list__header .order__button span i, .main__list .right__item .list__header .order__button span .error__main .error__text .item__button a, .error__main .error__text .item__button .main__list .right__item .list__header .order__button span a {
   color: #898989;
   font-size: 18px;
   padding-top: 8px;
 }
-.main__list .right__item .list__header .order__button span i.-active {
+.main__list .right__item .list__header .order__button span i.-active, .main__list .right__item .list__header .order__button span .error__main .error__text .item__button a.-active, .error__main .error__text .item__button .main__list .right__item .list__header .order__button span a.-active {
   color: #f5bd10;
 }
-.main__list .right__item .list__header .order__button span:hover i {
+.main__list .right__item .list__header .order__button span:hover i, .main__list .right__item .list__header .order__button span:hover .error__main .error__text .item__button a, .error__main .error__text .item__button .main__list .right__item .list__header .order__button span:hover a {
   color: #f5bd10;
 }
 .main__list .right__item .list__header p {
@@ -2209,7 +2209,7 @@ footer .bonus__foot .bonus__text ul li a {
 .main__blog .list__blog .list__blog__text p a {
   color: #f5bd10;
 }
-.main__blog .list__blog .list__blog__text p i {
+.main__blog .list__blog .list__blog__text p i, .main__blog .list__blog .list__blog__text p .error__main .error__text .item__button a, .error__main .error__text .item__button .main__blog .list__blog .list__blog__text p a {
   padding-right: 5px;
 }
 
@@ -2494,7 +2494,7 @@ footer .bonus__foot .bonus__text ul li a {
   height: 40px;
   text-align: center;
 }
-.cart__main .cart__table table tr td i {
+.cart__main .cart__table table tr td i, .cart__main .cart__table table tr td .error__main .error__text .item__button a, .error__main .error__text .item__button .cart__main .cart__table table tr td a {
   color: red;
   font-size: 18px;
 }
@@ -2593,6 +2593,80 @@ footer .bonus__foot .bonus__text ul li a {
     max-width: 100%;
   }
   .cart__main .cart__button .item__button {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.error__main .error__text {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  text-align: center;
+  flex: 0 0 60%;
+  max-width: 60%;
+  margin: auto 0;
+}
+.error__main .error__text .item__button {
+  display: flex;
+  justify-content: center;
+}
+.error__main .error__text .item__button.-start {
+  justify-content: flex-start;
+}
+@media (max-width: 767px) {
+  .error__main .error__text .item__button.-start {
+    justify-content: center;
+  }
+}
+.error__main .error__text .item__button a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  margin: 5px;
+  padding: 13px;
+  text-align: center;
+}
+.error__main .error__text .item__button a.-left {
+  background-color: #f5bd10;
+}
+.error__main .error__text .item__button a.-right {
+  background-color: #252525;
+}
+.error__main .error__text .item__button a {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+}
+.error__main .error__text h1 {
+  color: #f5bd10;
+  font-size: 100px;
+}
+.error__main .error__text h4 {
+  color: #363636;
+  font-size: 18px;
+  font-weight: font_w700;
+}
+.error__main .error_img {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  text-align: center;
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+@media (max-width: 767px) {
+  .error__main .error__text {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .error__main .error__text h1 {
+    font-size: 50px;
+  }
+  .error__main .error_img {
     flex: 0 0 100%;
     max-width: 100%;
   }
