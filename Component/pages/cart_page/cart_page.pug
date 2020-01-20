@@ -1,0 +1,30 @@
++breadcrumb(['Giỏ hàng'])
+section.cart__main
+  .container
+    .row
+      .cart__table
+        table
+          tr
+            th.count STT
+            th.pro SẢN PHẨM
+            th.info THÔNG TIN
+            th.privce ĐƠN GIÁ
+            th.num SỐ LƯỢNG
+            th.sum THÀNH TIỀN
+            th.delete XÓA
+          +table_item(item__cart)
+      .sum__table
+        table
+          tr 
+            th TỔNG TIỀN:
+            td 6.850.000 Đ
+          tr 
+            th THUẾ (VAT):
+            td 6850.000 Đ
+          tr 
+            th THANH TOÁN:
+            td.-red 7.520.000 Đ
+      .cart__button
+        .item__button
+          a(href="#").-right tiếp tục mua hàng
+          a(href="#").-left thanh toán
