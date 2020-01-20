@@ -1,4 +1,4 @@
-.main__user .login__text .item__button, .main__user .login__text, .main__user .login__form .item__button, .main__user .login__form, .main__user .form__regis .item__button, .main__user .form__regis .check-box__item, .main__user .form__regis h3, .main__blog, .blog__detail__form .form__blog, .blog__detail__form, .blog__detail__chat .blog__detail__comment, .blog__detail .blog__detail__footer, .main__list, footer .main__foot, .lastest, .hot, .news, .slider, .product__same .same__item, .product__same, .product__tag {
+.cart__main .sum__table, .cart__main .cart__table table tr td, .cart__main .cart__table table tr th, .cart__main .cart__table table tr, .cart__main, .main__user .login__text .item__button, .main__user .login__text, .main__user .login__form .item__button, .main__user .login__form, .main__user .form__regis .item__button, .main__user .form__regis .check-box__item, .main__user .form__regis h3, .main__blog, .blog__detail__form .form__blog, .blog__detail__form, .blog__detail__chat .blog__detail__comment, .blog__detail .blog__detail__footer, .main__list, footer .main__foot, .lastest, .hot, .news, .slider, .product__same .same__item, .product__same, .product__tag {
   padding: 2rem 0;
 }
 
@@ -26,11 +26,12 @@
   padding-bottom: 1rem;
 }
 
-.letter .letter__input input, .banner__second .banner__text, .product__tag .tag__item a, .product__item .item__info, .menu__logo .menu__search input, header .menu__user ul li, header .menu__icon ul li {
+.cart__main .sum__table table tr th,
+.cart__main .sum__table table tr td, .letter .letter__input input, .banner__second .banner__text, .product__tag .tag__item a, .product__item .item__info, .menu__logo .menu__search input, header .menu__user ul li, header .menu__icon ul li {
   padding: 1rem;
 }
 
-.main__list .right__item .list__header, footer .bonus__foot, .letter .letter__text, .letter, .product__last .text__last {
+.cart__main .sum__table table tr, .main__list .right__item .list__header, footer .bonus__foot, .letter .letter__text, .letter, .product__last .text__last {
   padding: 2rem;
 }
 
@@ -2456,6 +2457,142 @@ footer .bonus__foot .bonus__text ul li a {
     max-width: 100%;
   }
   .main__user .login__text {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.cart__main .cart__table {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.cart__main .cart__table table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+.cart__main .cart__table table tr th {
+  border: solid 1px #e1e1e1;
+  font-size: 14px;
+  color: #252525;
+  text-align: center;
+}
+.cart__main .cart__table table tr td {
+  border: solid 1px #e1e1e1;
+  font-size: 14px;
+  color: #252525;
+  text-align: center;
+}
+.cart__main .cart__table table tr td input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+.cart__main .cart__table table tr td i {
+  color: red;
+  font-size: 18px;
+}
+.cart__main .sum__table {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  flex: 0 0 40%;
+  max-width: 40%;
+  overflow-x: auto;
+  margin-left: auto;
+}
+.cart__main .sum__table table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+.cart__main .sum__table table tr {
+  font-size: 14px;
+  color: #252525;
+}
+.cart__main .sum__table table tr th,
+.cart__main .sum__table table tr td {
+  border: solid 1px #e1e1e1;
+  font-weight: 600;
+}
+.cart__main .sum__table table tr td {
+  text-align: right;
+}
+.cart__main .sum__table table tr td.-red {
+  color: red;
+  font-size: 18px;
+  font-weight: 600;
+}
+.cart__main .cart__button {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cart__main .cart__button .item__button {
+  display: flex;
+  justify-content: center;
+}
+.cart__main .cart__button .item__button.-start {
+  justify-content: flex-start;
+}
+@media (max-width: 767px) {
+  .cart__main .cart__button .item__button.-start {
+    justify-content: center;
+  }
+}
+.cart__main .cart__button .item__button a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  margin: 5px;
+  padding: 13px;
+  text-align: center;
+}
+.cart__main .cart__button .item__button a.-left {
+  background-color: #f5bd10;
+}
+.cart__main .cart__button .item__button a.-right {
+  background-color: #252525;
+}
+.cart__main .cart__button .item__button {
+  flex: 0 0 40%;
+  max-width: 40%;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  margin-left: auto;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  justify-content: flex-end;
+}
+.cart__main .cart__button .item__button a {
+  height: 55px;
+  padding: 1.35rem;
+}
+.cart__main .cart__button .item__button a.-right {
+  width: 55%;
+}
+.cart__main .cart__button .item__button a.-left {
+  width: 40%;
+}
+@media (max-width: 767px) {
+  .cart__main .sum__table {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .cart__main .cart__button .item__button {
     flex: 0 0 100%;
     max-width: 100%;
   }
