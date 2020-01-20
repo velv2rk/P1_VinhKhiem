@@ -1,14 +1,15 @@
+
 .banner__second {
   .container{
     background-color: rgb(238, 238, 238);
 
   }
   .banner__img {
-    @include collum(15px, 15px);
+    @include collum($pixel_15, $pixel_15);
     @include flex(50%);
   }
   .banner__text {
-    @include collum(15px, 15px);
+    @include collum($pixel_15, $pixel_15);
     @include flex(50%);
     @extend %p-1;
     text-align: center;
@@ -34,8 +35,8 @@
   @media (max-width:767px) {
     .banner__img{
       @include flex(100%);
-      @include border-left(15px,white);
-      @include border-right(15px,white);
+      @include border-left($pixel_15,white);
+      @include border-right($pixel_15,white);
 
     }
     .banner__text{

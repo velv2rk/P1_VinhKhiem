@@ -1,7 +1,7 @@
 .main__menu {
   background-color: $color_bg-menu;
   .menu__list {
-    @include collum(15px, 15px);
+    @include collum($pixel_15, $pixel_15);
     .menu__ul {
       ul {
         list-style: none;
@@ -21,7 +21,7 @@
     }
   }
   .menu__hide {
-    @include collum(15px,15px);
+    @include collum($pixel_15,$pixel_15);
     .nav__menu{
 
       .span__menu {

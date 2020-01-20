@@ -1,9 +1,8 @@
 .main__user {
   .login__form {
-    @include collum(15px, 15px);
+    @include collum($pixel_15, $pixel_15);
     @extend %p-col-2;
     @include flex(50%);
-    @include display_flex();
     @include button();
     @include input_group();
     h3 {
@@ -11,12 +10,27 @@
       color: $color_black;
       @extend %pb-1;
     }
-
+    .input__login {
+      @include display_flex;
+      @extend %pt-1;
+      p {
+        font-size: $font_small;
+        color: $color_black;
+        span {
+          color: red;
+        }
+      }
+      input {
+        width: 100%;
+        height: 50px;
+        margin: 1rem 0;
+      }
+    }
     .check-box__login {
       @include display_flex();
       .input {
-        width: 15px;
-        height: 15px;
+        width: $pixel_15;
+        height: $pixel_15;
       }
       p {
         font-size: $font_small;
@@ -42,7 +56,7 @@
     }
   }
   .login__text {
-    @include collum(15px, 15px);
+    @include collum($pixel_15, $pixel_15);
     @extend %p-col-2;
     @include flex(50%);
     @include button();
@@ -59,7 +73,6 @@
     .item__button {
       @extend %p-col-2;
       a {
-        margin: 0;
         padding: 1rem 0;
         width: 125px;
         height: 50px;

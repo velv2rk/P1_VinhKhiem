@@ -2,7 +2,7 @@
   @extend %pt-2;
   background-color: $color_gray;
   .brand__img {
-    @include collum(15px, 15px);
+    @include collum($pixel_15, $pixel_15);
     @include flex(20%);
     text-align: center;
   }
@@ -18,10 +18,10 @@
       }
       .arrow {
         &.left {
-          left:15px;  
+          left:$pixel_15;  
         }
         &.right {
-          right:15px;
+          right:$pixel_15;
         }
       }
     }

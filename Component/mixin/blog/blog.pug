@@ -60,11 +60,11 @@ mixin blog_detail(items)
                 p=parts.text3
               else
                 .blog__detail__img 
-                  img(src=`/img/blog/${parts.img_blog}`).img
+                  img(src=`./img/blog/${parts.img_blog}`).img
       .blog__detail__footer
         .blog__detail__footer__left
           h3 TAGS: 
           +blog_detail_tag(blog_detail_tag)
         .blog__detail__footer__right
           h3 CHIA SẺ:
-          +blog_detail_social(listIcon)    
+          +blog_detail_social(listIcon)   

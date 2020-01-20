@@ -9,9 +9,9 @@
     .item__button{
       a{
         display: inline-block;
-        width: $pixel_150;
-        height: $pixel_50;
-        @extend %p-18;
+        width: 150px;
+        height: 50px;
+        padding: 18px;
       }
     }
     h1{

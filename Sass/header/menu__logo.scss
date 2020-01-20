@@ -6,11 +6,11 @@
     }
   }
   .menu__img {
-    @include collum(15px, 15px);
+    @include collum($pixel_15, $pixel_15);
     @include flex(24%);
   }
   .menu__hotline {
-    @include collum(15px, 15px);
+    @include collum($pixel_15, $pixel_15);
     @include flex(23%);
     @include center();
 
@@ -39,7 +39,7 @@
     }
   }
   .menu__search {
-    @include collum(15px, 15px);
+    @include collum($pixel_15, $pixel_15);
     @include flex(30%);
     margin : auto 0;
     input {
@@ -77,3 +77,4 @@
     }
   }
 }
+  

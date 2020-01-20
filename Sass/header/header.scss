@@ -4,7 +4,7 @@ header {
   height: 50px;
   overflow: hidden;
   .menu__icon {
-    @include collum(15px, 15px);
+    @include collum($pixel_15, $pixel_15);
     @include flex(25%);
     ul {
       list-style: none;
@@ -39,7 +39,7 @@ header {
     }
   }
   .menu__user {
-    @include collum(15px, 15px);
+    @include collum($pixel_15, $pixel_15);
     margin-left: 40%;
     @include flex(35%);
     ul {

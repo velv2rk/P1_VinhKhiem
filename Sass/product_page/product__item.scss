@@ -1,7 +1,9 @@
 .product__item {
   transition: 1s;
   @include flex(33%);
-  @include collum(15px, 15px);
+  @include collum($pixel_15, $pixel_15);
+  @extend %pb-1;
+  @include shadow__item();
   @media (max-width: 767px) {
     & {
       @include flex(100%);
@@ -14,8 +16,11 @@
     }
   }
   .item__img {
-    margin: auto 0px;;
+    margin: auto 0px;
     text-align: center;
+    img{
+      padding: 2px;
+    }
   }
   .item__info {
     text-align: center;
@@ -33,6 +38,7 @@
     @include rate__star();
   }
   &:hover {
+    transition: 0s;
     .item__button {
       visibility: visible;
       opacity: 1;
@@ -45,4 +51,3 @@
     opacity: 0;
   }
 }
-

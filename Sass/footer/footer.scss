@@ -3,21 +3,21 @@ footer {
     @extend %p-col-2;
     background-color: $color_gray;
     .pay__item {
-      @include collum(15px, 15px);
+      @include collum($pixel_15, $pixel_15);
       @include flex(50%);
       .foot__bank {
         @include display_flex();
         @extend %pt-1;
         .bank__img {
           @include flex(25%);
-          @include collum(0, 15px);
+          @include collum(0, $pixel_15);
         }
       }
       .foot__answer {
         @include display_flex();
         padding-top: 35px;
         .answer__item {
-          @include collum(0, 15px);
+          @include collum(0, 0);
           @include flex(50%);
           .answer__icon {
             display: inline-block;
@@ -75,7 +75,7 @@ footer {
     background-color: $color_bg_menu;
     @extend %p-2;
     .bonus__text {
-      @include collum(15px, 15px);
+      @include collum($pixel_15, $pixel_15);
       @include flex(50%);
       p {
         font-size: $font-13;

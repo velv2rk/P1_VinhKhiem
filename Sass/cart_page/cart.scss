@@ -1,7 +1,7 @@
 .cart__main {
   @extend %p-col-2;
   .cart__table {
-    @include collum(15px, 15px);
+    @include collum($pixel_15, $pixel_15);
     @include flex(100%);
     overflow-x: auto;
     table {
@@ -38,7 +38,7 @@
     }
   }
   .sum__table {
-    @include collum(15px, 15px);
+    @include collum($pixel_15, $pixel_15);
     @include flex(40%);
     @extend %p-col-2;
     overflow-x: auto;
@@ -75,7 +75,7 @@
     @include display_flex();
     .item__button {
       @include flex(40%);
-      @include collum(15px, 15px);
+      @include collum($pixel_15, $pixel_15);
       margin-left: auto;
       text-transform: uppercase;
       font-size: $font_small;

@@ -1,12 +1,12 @@
 .banner__first {
   .banner__item {
-    @include collum(15px, 15px);
+    @include collum($pixel_15, $pixel_15);
     @include flex(50%);
     display: flex;
     flex-wrap: wrap;
     background-color: $color_slide;
-    @include border-left(15px,white);
-    @include border-right(15px,white);
+    @include border-left($pixel_15,white);
+    @include border-right($pixel_15,white);
 
     .banner__text {
       z-index: 1;
@@ -78,7 +78,7 @@
     @media (max-width: 767px) {
       & {
         @include flex(100%);
-        margin: 15px auto;
+        margin: $pixel_15 auto;
       }
     }
     @media (max-width: 435px) {
