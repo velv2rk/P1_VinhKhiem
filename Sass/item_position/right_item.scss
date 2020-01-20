@@ -1,6 +1,6 @@
 .right__item {
   @include flex(75%);
-  @include collum(15px, 15px);
+  @include collum($pixel_15, $pixel_15);
   .list__product{ 
     @include display_flex();
   }

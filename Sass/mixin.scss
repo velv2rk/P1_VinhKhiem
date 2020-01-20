@@ -1,7 +1,7 @@
 @mixin container() {
   -moz-text-align-last: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: $pixel_15;
+  padding-left: $pixel_15;
   margin-left: auto;
   margin-right: auto;
   max-width: 1140px;
@@ -11,8 +11,8 @@
   min-height: 1px;
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -$pixel_15;
+  margin-left: -$pixel_15;
   align-self: center;
 }
 @mixin collum($left, $right) {
@@ -25,7 +25,7 @@
   flex: 0 0 $percent;
   max-width: $percent;
 }
-@mixin display_flex(){
+@mixin display_flex() {
   display: flex;
   flex-wrap: wrap;
 }
@@ -37,41 +37,37 @@
   width: $percent;
 }
 
-@mixin border($px,$color)
-{
-  border : solid $px $color;
+@mixin border($px, $color) {
+  border: solid $px $color;
 }
 
-@mixin border-top($px,$color)
-{
-  border-top : solid $px $color;
+@mixin border-top($px, $color) {
+  border-top: solid $px $color;
 }
 
-@mixin border-bottom($px,$color)
-{
-  border-bottom : solid $px $color;
+@mixin border-bottom($px, $color) {
+  border-bottom: solid $px $color;
 }
 
-@mixin border-left($px,$color)
-{
-  border-left : solid $px $color;
+@mixin border-left($px, $color) {
+  border-left: solid $px $color;
 }
 
-@mixin border-right($px,$color)
-{
-  border-right : solid $px $color;
+@mixin border-right($px, $color) {
+  border-right: solid $px $color;
 }
 
 @mixin button {
   .item__button {
+    @extend %p-col-1;
     display: flex;
     justify-content: center;
-    &.-start{
+    &.-start {
       justify-content: flex-start;
-      @media (max-width:767px) {
-        &{
+      @media (max-width: 767px) {
+        & {
           justify-content: center;
-        }        
+        }
       }
     }
     a {
@@ -92,35 +88,36 @@
   }
 }
 
-@mixin list_input(){
+@mixin list_input() {
   font-size: $font_small;
   color: $color_list;
   margin-left: 10px;
   height: 35px;
   width: 165px;
   padding-left: 5px;
-  &.-small{
+  &.-small {
     width: 90px;
   }
 }
 
-@mixin rate__star(){
+@mixin rate__star() {
   padding: 5px;
-    font-size: 12px;
-    color: $color_list;
-    i {
-      color: $color_or;
-      &.-white {
-        border-color: $color_or;
-        color: $color_white;
-      }
+  font-size: 12px;
+  color: $color_list;
+  i {
+    color: $color_or;
+    &.-white {
+      border-color: $color_or;
+      color: $color_white;
     }
+  }
 }
-@mixin footer_page(){
+
+@mixin footer_page() {
   display: inline-block;
   position: absolute;
   right: 0;
-  bottom: -15px;
+  bottom: -$pixel_15;
   span {
     padding: 10px;
     color: $color_list;
@@ -156,6 +153,12 @@
     }
   }
 }
+@mixin shadow__item(){
+  .shadow__item{
+    @include border(0.5px,$color_border);
+    &:hover{
+      box-shadow: 0 0 5px $color_banner_2;
+    }
 
-
-
+  }
+}

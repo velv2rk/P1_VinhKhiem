@@ -5,7 +5,7 @@
     @include border-bottom(1px,$color_p_gray);
   }
   .about__item {
-    @include collum(15px, 15px);
+    @include collum($pixel_15, $pixel_15);
     @include flex(17.5%);
 
     &.-large {
@@ -18,7 +18,7 @@
         @extend %pt-2;
         li {
           display: flex;
-          padding: 15px 100px 15px 0px;
+          padding: $pixel_15 100px $pixel_15 0px;
           i {
             font-size: $font_18;
             color: black;

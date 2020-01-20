@@ -2,7 +2,7 @@
   padding: 2rem 0;
 }
 
-.slider__file .slider__text .text__check, .pop-up .pop-up__text .pop-up__info, .main__blog .list__blog .list__blog__text .post-by, .main__blog .list__blog .list__blog__text h3, .blog__detail__chat .blog__detail__comment .comment__content .day-post, .main__list .right__item .product__last, .product__detail .product__detail__info .info__count, .product__detail .product__detail__info .info__dropdown, .product__detail .product__detail__img .product__detail__bonus {
+.slider__file .slider__text .text__check, .slider__file .slider__text .item__button, .pop-up .pop-up__text .pop-up__info, .pop-up .pop-up__text .item__button, .error__main .error__text .item__button, .cart__main .cart__button .item__button, .main__user .login__text .item__button, .main__user .login__form .item__button, .main__user .form__regis .item__button, .main__blog .list__blog .list__blog__text .post-by, .main__blog .list__blog .list__blog__text h3, .blog__detail__form .form__blog .item__button, .blog__detail__chat .blog__detail__comment .comment__content .day-post, .main__list .right__item .product__last, .banner__second .banner__text .item__button, .product__detail .product__detail__info .info__count, .product__detail .product__detail__info .info__dropdown, .product__detail .product__detail__img .product__detail__bonus, .product__item .item__button, .product__last .text__last .item__button {
   padding: 1rem 0;
 }
 
@@ -14,7 +14,7 @@
   padding-top: 2rem;
 }
 
-.pop-up .check-box, .main__user .login__text p, .main__user, footer .main__foot .pay__item .foot__bank {
+.pop-up .check-box, .main__user .login__text p, .main__user .login__form .input__login, .main__user, footer .main__foot .pay__item .foot__bank, .product__last {
   padding-top: 1rem;
 }
 
@@ -22,12 +22,12 @@
   padding-bottom: 2rem;
 }
 
-.main__user .login__text h3, .main__user .login__form h3, .product__tag .tag__text p {
+.main__user .login__text h3, .main__user .login__form h3, .product__tag .tag__text p, .product__item {
   padding-bottom: 1rem;
 }
 
 .cart__main .sum__table table tr th,
-.cart__main .sum__table table tr td, .letter .letter__input input, .banner__second .banner__text, .product__tag .tag__item a, .product__item .item__info, .menu__logo .menu__search input, header .menu__user ul li, header .menu__icon ul li {
+.cart__main .sum__table table tr td, .letter .letter__input input, .banner__second .banner__text, .slider .slider__text .slider__content, .product__tag .tag__item a, .product__item .item__info, .menu__logo .menu__search input, header .menu__user ul li, header .menu__icon ul li {
   padding: 1rem;
 }
 
@@ -43,14 +43,6 @@
   padding-left: 1rem;
 }
 
-footer .main__foot .pay__item .foot__answer .answer__item .answer__icon, .banner__first .banner__item .banner__sale .banner__sale__circle, .banner__first .banner__item .banner__sale, .menu__basket .basket__count {
-  border-radius: 50%;
-}
-
-.letter .letter__button a, .letter .letter__input input, .menu__logo .menu__search input {
-  border-radius: 20px;
-}
-
 .pop-up .check-box label, .blog__detail__form, .blog__detail__chat {
   padding-left: 2rem;
 }
@@ -59,8 +51,12 @@ footer .main__foot .pay__item .foot__answer .answer__item .answer__icon, .banner
   padding-left: 4rem;
 }
 
-.error__main .error__text .item__button a {
-  padding: 18px;
+footer .main__foot .pay__item .foot__answer .answer__item .answer__icon, .banner__first .banner__item .banner__sale .banner__sale__circle, .banner__first .banner__item .banner__sale, .menu__basket .basket__count {
+  border-radius: 50%;
+}
+
+.letter .letter__button a, .letter .letter__input input, .menu__logo .menu__search input {
+  border-radius: 20px;
 }
 
 * {
@@ -486,6 +482,14 @@ header .menu__user ul li:hover a {
   width: 100%;
   flex: 0 0 50%;
   max-width: 50%;
+}
+.product__last .shadow__item {
+  border: solid 0.5px #e1e1e1;
+}
+.product__last .shadow__item:hover {
+  box-shadow: 0 0 5px #eeeeee;
+}
+.product__last .shadow__item {
   display: flex;
   flex-wrap: wrap;
 }
@@ -495,7 +499,7 @@ header .menu__user ul li:hover a {
   }
 }
 @media (max-width: 767px) {
-  .product__last.-hide {
+  .product__last {
     display: none;
   }
   .product__last:last-child {
@@ -518,6 +522,9 @@ header .menu__user ul li:hover a {
 .product__last .img__last {
   flex: 0 0 50%;
   max-width: 50%;
+}
+.product__last .img__last img {
+  padding: 2px;
 }
 .product__last .text__last {
   flex: 0 0 50%;
@@ -578,6 +585,12 @@ header .menu__user ul li:hover a {
   padding-right: 15px;
   width: 100%;
 }
+.product__item .shadow__item {
+  border: solid 0.5px #e1e1e1;
+}
+.product__item .shadow__item:hover {
+  box-shadow: 0 0 5px #eeeeee;
+}
 @media (max-width: 767px) {
   .product__item {
     flex: 0 0 100%;
@@ -594,6 +607,9 @@ header .menu__user ul li:hover a {
 .product__item .item__img {
   margin: auto 0px;
   text-align: center;
+}
+.product__item .item__img img {
+  padding: 2px;
 }
 .product__item .item__info {
   text-align: center;
@@ -616,6 +632,9 @@ header .menu__user ul li:hover a {
 .product__item p i.-white {
   border-color: #f5bd10;
   color: white;
+}
+.product__item:hover {
+  transition: 0s;
 }
 .product__item:hover .item__button {
   visibility: visible;
@@ -782,6 +801,7 @@ header .menu__user ul li:hover a {
   background-color: #f5bd10;
   color: white;
   text-align: center;
+  height: 42px;
 }
 .product__detail .product__detail__info .info__social a i {
   font-size: 12px;
@@ -812,6 +832,7 @@ header .menu__user ul li:hover a {
   font-size: 14px;
   border: solid 1px #898989;
   color: #363636;
+  text-align: center;
 }
 .product__tag .tag__item a:first-child {
   background-color: black;
@@ -887,7 +908,11 @@ header .menu__user ul li:hover a {
   position: absolute;
   bottom: 5px;
   left: 50%;
-  translate: -50%, 0;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 .slider .slider__item .slider__content .slider__button span {
   display: inline-block;
@@ -1030,7 +1055,6 @@ header .menu__user ul li:hover a {
   flex-direction: column;
 }
 .slider .slider__text .slider__content {
-  padding: 10px;
   flex: 0 0 25%;
   max-width: 25%;
   max-height: 25%;
@@ -1042,10 +1066,12 @@ header .menu__user ul li:hover a {
   max-width: 15%;
   color: #f5bd10;
   font-size: 30px;
+  margin: auto 0;
 }
 .slider .slider__text .slider__content .text__info {
   flex: 0 0 85%;
   max-width: 85%;
+  margin: auto 0;
 }
 .slider .slider__text .slider__content .text__info h3 {
   font-size: 16px;
@@ -1086,8 +1112,8 @@ header .menu__user ul li:hover a {
 }
 .highlights .highlights__product {
   position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -1103,8 +1129,8 @@ header .menu__user ul li:hover a {
 }
 .news .new__product {
   position: relative;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 100%;
   display: flex;
   flex: 0 0 100%;
@@ -1254,8 +1280,8 @@ header .menu__user ul li:hover a {
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
-  flex: 0 0 25%;
-  max-width: 25%;
+  flex: 0 0 26%;
+  max-width: 26%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1274,8 +1300,18 @@ header .menu__user ul li:hover a {
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 48%;
+  max-width: 48%;
+}
+.hot .hot__large .product__item {
+  height: 100%;
+}
+.hot .hot__large .product__item .shadow__item {
+  height: 100%;
+  padding-top: 100px;
+}
+.hot .hot__large .product__item .shadow__item .item__info {
+  font-size: 18px;
 }
 .hot .hot__large .product__item {
   flex: 0 0 100%;
@@ -1361,6 +1397,14 @@ header .menu__user ul li:hover a {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 40px;
+}
+.lastest .lastest__item {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .brand {
@@ -1467,6 +1511,7 @@ header .menu__user ul li:hover a {
   }
   .letter .letter__input input {
     text-align: center;
+    margin-bottom: 10px;
   }
   .letter .letter__button {
     flex: 0 0 100%;
@@ -1585,7 +1630,7 @@ footer .main__foot .pay__item .foot__answer {
 footer .main__foot .pay__item .foot__answer .answer__item {
   position: relative;
   padding-left: 0;
-  padding-right: 15px;
+  padding-right: 0;
   width: 100%;
   flex: 0 0 50%;
   max-width: 50%;
@@ -1953,9 +1998,12 @@ footer .bonus__foot .bonus__text ul li a {
   flex: 0 0 100%;
   max-width: 100%;
 }
-@media (max-width: 768px) {
-  .main__list .right__item .product__last.-hide {
+@media (max-width: 767px) {
+  .main__list .right__item .product__last {
     display: block;
+  }
+  .main__list .right__item .product__last.-hide {
+    display: none;
   }
 }
 .main__list .right__item .product__last .img__last {
@@ -1980,11 +2028,6 @@ footer .bonus__foot .bonus__text ul li a {
   }
   .main__list .right__item .product__last .text__last .item__button {
     justify-content: flex-start;
-  }
-}
-@media (max-width: 768px) {
-  .main__list .right__item .product__item.-hide {
-    display: block;
   }
 }
 
@@ -2321,8 +2364,6 @@ footer .bonus__foot .bonus__text ul li a {
   width: 100%;
   flex: 0 0 50%;
   max-width: 50%;
-  display: flex;
-  flex-wrap: wrap;
 }
 .main__user .login__form .item__button {
   display: flex;
@@ -2380,6 +2421,22 @@ footer .bonus__foot .bonus__text ul li a {
 .main__user .login__form h3 {
   font-size: 14px;
   color: #363636;
+}
+.main__user .login__form .input__login {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main__user .login__form .input__login p {
+  font-size: 14px;
+  color: #363636;
+}
+.main__user .login__form .input__login p span {
+  color: red;
+}
+.main__user .login__form .input__login input {
+  width: 100%;
+  height: 50px;
+  margin: 1rem 0;
 }
 .main__user .login__form .check-box__login {
   display: flex;
@@ -2450,7 +2507,6 @@ footer .bonus__foot .bonus__text ul li a {
   color: #898989;
 }
 .main__user .login__text .item__button a {
-  margin: 0;
   padding: 1rem 0;
   width: 125px;
   height: 50px;
@@ -2643,6 +2699,7 @@ footer .bonus__foot .bonus__text ul li a {
   display: inline-block;
   width: 150px;
   height: 50px;
+  padding: 18px;
 }
 .error__main .error__text h1 {
   color: #f5bd10;

@@ -1,6 +1,6 @@
 .left__item {
   @include flex(25%);
-  @include collum(15px, 15px);
+  @include collum($pixel_15, $pixel_15);
   ul {
     @extend %pb-2;
     list-style: none;
@@ -25,7 +25,7 @@
         position: absolute;
         color: $color_or;
         display: none;
-        right: 15px;
+        right: $pixel_15;
       }
       &.-active {
         @include display_flex();
@@ -47,6 +47,8 @@
         }
       }
     }
+
+    //list_gird_detail_page
     .list__img {
       @include display_flex();
       .img__link {
@@ -62,6 +64,8 @@
         }
       }
     }
+
+    //blog-page
     &.-blog {
       li {
           padding-left: 0px;
@@ -122,6 +126,7 @@
       }
     }
   }
+  //reponsive
   @media (max-width: 767px) {
     & {
       @include flex(100%);

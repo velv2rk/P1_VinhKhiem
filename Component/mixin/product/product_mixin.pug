@@ -4,77 +4,99 @@ mixin product_item(items)
     case x
       when 1
         .product__item
-          .item__img
-            img(src=`./img/product/${item}`).img
-          .item__info
-            h4.-price 1.550.000 Đ
-            h4 MÁY KHOAN BLACK DECKER
-            p
-              -for (var i = 0; i < 4 ; i++)
-                i.fa.fa-star
-              i.far.fa-star
-              br
-              |(12 Đánh giá)
-          .item__button
-            a(href="#").-left MUA NGAY
-            a(href="#").-right XEM CHI TIẾT
-              -x=x+1
+          .shadow__item
+            .item__img
+              img(src=`./img/product/${item}`).img
+            .item__info
+              h4.-price 1.550.000 Đ
+              h4 MÁY KHOAN BLACK DECKER
+              p
+                -for (var i = 0; i < 4 ; i++)
+                  i.fa.fa-star
+                i.far.fa-star
+                br
+                |(12 Đánh giá)
+            .item__button
+              a(href="#").-left MUA NGAY
+              a(href="#").-right XEM CHI TIẾT
+                -x=x+1
       default
         .product__item.-hide
-          .item__img
-            img(src=`./img/product/${item}`).img
-          .item__info
-            h4.-price 1.550.000 Đ
-            h4 MÁY KHOAN BLACK DECKER
-            p
-              -for (var i = 0; i < 4 ; i++)
-                i.fa.fa-star
-              i.far.fa-star
-              br
-              |(12 Đánh giá)
-          .item__button
-            a(href="#").-left MUA NGAY
-            a(href="#").-right XEM CHI TIẾT
+          .shadow__item
+            .item__img
+              img(src=`./img/product/${item}`).img
+            .item__info
+              h4.-price 1.550.000 Đ
+              h4 MÁY KHOAN BLACK DECKER
+              p
+                -for (var i = 0; i < 4 ; i++)
+                  i.fa.fa-star
+                i.far.fa-star
+                br
+                |(12 Đánh giá)
+            .item__button
+              a(href="#").-left MUA NGAY
+              a(href="#").-right XEM CHI TIẾT
 
 
 mixin product_only(img,display)
   .product__item(class=`${display}`)
-    .item__img
-      img(src=`./img/product/${img}.jpg`).img
-    .item__info
-      h4.-price 1.550.000 Đ
-      h4 MÁY KHOAN BLACK DECKER
-      p
-        -for (var i = 0; i < 4 ; i++)
-          i.fa.fa-star
-        i.far.fa-star
-        br
-        |(12 Đánh giá)
-    .item__button
-      a(href="#").-left MUA NGAY
-      a(href="#").-right XEM CHI TIẾT
-
-
-mixin product_info(items,text)
-  each item in items
-    .product__last.-hide
-      .img__last
-        img(src=`./img/product/${item}`).img
-      .text__last
-        h4 MÁY KHOAN CNC 3D
+    .shadow__item
+      .item__img
+        img(src=`./img/product/${img}.jpg`).img
+      .item__info
+        h4.-price 1.550.000 Đ
+        h4 MÁY KHOAN BLACK DECKER
         p
           -for (var i = 0; i < 4 ; i++)
             i.fa.fa-star
           i.far.fa-star
+          br
           |(12 Đánh giá)
-        p=text
-        h4.-price 2.350.000 Đ
-        .item__button
-          a(href="#").-left MUA NGAY
-          a(href="#").-right XEM CHI TIẾT
+      .item__button
+        a(href="#").-left MUA NGAY
+        a(href="#").-right XEM CHI TIẾT
 
 
-
+mixin product_info(items,text)
+  -var x=1
+  each item in items
+    case x
+      when 1
+        .product__last
+          .shadow__item
+            .img__last
+              img(src=`./img/product/${item}`).img
+            .text__last
+              h4 MÁY KHOAN CNC 3D
+              p
+                -for (var i = 0; i < 4 ; i++)
+                  i.fa.fa-star
+                i.far.fa-star
+                |(12 Đánh giá)
+              p=text
+              h4.-price 2.350.000 Đ
+              .item__button
+                a(href="#").-left MUA NGAY
+                a(href="#").-right XEM CHI TIẾT
+              -x=x+1
+      default
+        .product__last.-hide
+          .shadow__item
+            .img__last
+              img(src=`./img/product/${item}`).img
+            .text__last
+              h4 MÁY KHOAN CNC 3D
+              p
+                -for (var i = 0; i < 4 ; i++)
+                  i.fa.fa-star
+                i.far.fa-star
+                |(12 Đánh giá)
+              p=text
+              h4.-price 2.350.000 Đ
+              .item__button
+                a(href="#").-left MUA NGAY
+                a(href="#").-right XEM CHI TIẾT
 
 mixin product_detail()
   .product__detail

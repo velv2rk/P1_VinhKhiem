@@ -1,7 +1,7 @@
 .main__user {
   @extend %pt-1;
   .form__regis {
-    @include collum(15px, 15px);
+    @include collum($pixel_15, $pixel_15);
     @include display_flex();
     @include button();
     @include input_group();
@@ -21,8 +21,8 @@
       @include display_flex();
       @extend %p-col-2;
       input {
-        width: 15px;
-        height: 15px;
+        width: $pixel_15;
+        height: $pixel_15;
         @include border(0.5px, $color_list);
       }
       p {

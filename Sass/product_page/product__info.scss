@@ -1,14 +1,18 @@
 .product__last {
-  @include collum(15px, 15px);
+  @include collum($pixel_15, $pixel_15);
   @include flex(50%);
-  @include display_flex();
+  @extend %pt-1;
+  @include shadow__item();
+  .shadow__item{
+    @include display_flex();
+  }
   @media (min-width: 768px) {
     &:last-child {
       display: none;
     }
   }
   @media (max-width: 767px) {
-    &.-hide {
+    & {
       display: none;
     }
     &:last-child {
@@ -19,6 +23,7 @@
         @include flex(100%);
         margin: auto 0;
         text-align: center;
+
       }
       .text__last {
         @include flex(100%);
@@ -27,6 +32,9 @@
   }
   .img__last {
     @include flex(50%);
+    img{
+      padding: 2px;
+    }
   }
   .text__last {
     @extend %p-2;

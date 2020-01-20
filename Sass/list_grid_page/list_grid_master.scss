@@ -1,15 +1,13 @@
-
 .main__list {
   @extend %p-col-2;
   .right__item {
     margin-top: -30px;
     @extend %pb-2;
     .list__header {
-      @include collum(15px, 15px);
+      @include collum($pixel_15, $pixel_15);
       @include flex(100%);
       @include display_flex();
       @extend %p-2;
-
       .order__style {
         position: relative;
         @include display_flex();
@@ -60,7 +58,7 @@
       @media (max-width: 767px) {
         & {
           .order__style {
-            margin: 15px auto;
+            margin: $pixel_15 auto;
               &.-small {
                 display: none;
               }
@@ -75,9 +73,12 @@
     .product__last {
       @include flex(100%);
       @extend %p-col-1;
-      @media (max-width: 768px) {
-        &.-hide {
+      @media (max-width:767px) {
+        &{
           display: block;
+          &.-hide{
+            display: none;
+          }
         }
       }
       .img__last {
@@ -103,13 +104,5 @@
         }
       }
     }
-    .product__item {
-      @media (max-width: 768px) {
-        &.-hide {
-          display: block;
-        }
-      }
-    }
-
   }
 }

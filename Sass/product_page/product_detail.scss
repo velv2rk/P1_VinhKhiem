@@ -1,5 +1,5 @@
 .product__detail {
-  @include collum(15px, 15px);
+  @include collum($pixel_15, $pixel_15);
   @include display_flex();
   margin-top: 30px;
   .product__detail__img {
@@ -19,7 +19,7 @@
   }
   .product__detail__info {
     @include flex(50%);
-    @include collum(15px, 0px);
+    @include collum($pixel_15, 0px);
     h3 {
       font-size: $font_toogle;
     }
@@ -102,6 +102,7 @@
           background-color: $color_or;
           color: $color_white;
           text-align: center;
+          height: 42px;
         }
       }
     }
@@ -129,7 +130,7 @@
 }
 .product__tag {
   @extend %p-col-2;
-  @include collum(15px, 15px);
+  @include collum($pixel_15, $pixel_15);
   .tag__item {
     display: flex;
     a {
@@ -137,6 +138,7 @@
       @extend %p-1;
       @include border(1px,$color_list);
       color: $color_black;
+      text-align: center;
       &:first-child {
         background-color: black;
         color: $color_or;
@@ -153,7 +155,7 @@
     }
   }
   .tag__text {
-    padding: 30px 15px;
+    padding: 30px $pixel_15;
     color: $color_list;
     font-size: $font_13;
     margin: 14px 0;
@@ -166,10 +168,10 @@
 
 .product__same {
   @extend %p-col-2;
-  @include collum(15px, 15px);
+  @include collum($pixel_15, $pixel_15);
   .same__title {
     @include display_flex();
-    @include collum(15px, 15px);
+    @include collum($pixel_15, $pixel_15);
     .title__text {
       @include flex(45%);
     }
@@ -186,7 +188,7 @@
   }
   .same__item {
     @extend %p-col-2;
-    @include collum(15px, 15px);
+    @include collum($pixel_15, $pixel_15);
     @include display_flex();
   }
 }
